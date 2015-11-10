@@ -39,6 +39,8 @@ int main(int argc, char **argv) {
 		printf("connection from %s, port %d\n",
 			inet_ntop(AF_INET, &cliaddr.sin_addr, buff, sizeof(buff)),
 			 ntohs(cliaddr.sin_port)); //print out client address
+        // Numeric binary valeu to dotted notation.
+        // Numeric to presentation.
 
 		// Construct the  data to return to the client.
 		snprintf(buff, sizeof(buff), "%.24s\r\n", ctime(&ticks));

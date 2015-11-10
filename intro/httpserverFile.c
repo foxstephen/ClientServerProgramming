@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
 			if((strstr(recvline, "\r\n\r\n")) != NULL) {
 				break;
 			}
-        	}
+        }
 
 		// GET /index.html HTTP/1.1
 		sscanf(recvline,"%s %s %s", cmd, path, vers);
